@@ -1,0 +1,20 @@
+site_name: Kelas GoLang(Pertemuan Pertama)
+theme:
+  name: material
+  palette:
+    primary: indigo
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/fajhrinazgul
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCESphZz-eFN3SSOO3yvcJmA/videos
+copyright: Copyright &copy; 2021-2022 Kafekoding
