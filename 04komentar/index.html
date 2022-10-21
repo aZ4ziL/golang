@@ -13,7 +13,7 @@
     
     
       
-        <title>Program Hello World - Kelas GoLang(Pertemuan Pertama)</title>
+        <title>Komentar - Kelas GoLang(Pertemuan Pertama)</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#program-hello-world" class="md-skip">
+        <a href="#komentar" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Program Hello World
+              Komentar
             
           </span>
         </div>
@@ -228,6 +228,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../03helloworld/" class="md-nav__link">
+        Program Hello World
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -240,12 +255,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Program Hello World
+          Komentar
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Program Hello World
+        Komentar
       </a>
       
         
@@ -264,8 +279,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-program-hello-world" class="md-nav__link">
-    Code Program Hello World
+  <a href="#komentar-inline" class="md-nav__link">
+    Komentar Inline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#komentar-multiline" class="md-nav__link">
+    Komentar Multiline
   </a>
   
 </li>
@@ -274,21 +296,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../04komentar/" class="md-nav__link">
-        Komentar
-      </a>
     </li>
   
 
@@ -335,8 +342,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-program-hello-world" class="md-nav__link">
-    Code Program Hello World
+  <a href="#komentar-inline" class="md-nav__link">
+    Komentar Inline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#komentar-multiline" class="md-nav__link">
+    Komentar Multiline
   </a>
   
 </li>
@@ -356,19 +370,28 @@
                   
 
 
-<h1 id="program-hello-world">Program Hello World</h1>
-<p>Untuk mempelajari bahasa pemrograman yang baru biasanya kita harus tahu bagaimana bentuk dari program sederhana <code>hello world</code>. Jika kita sudah paham dengan code sederhana ini, maka kita akan lebih paham untuk mempelajarinya.</p>
-<h2 id="code-program-hello-world">Code Program Hello World</h2>
-<p>Buat sebuah file dengan nama <code>main.go</code> di dalam folder project kita yang di dalamnya ada file <code>go.mod</code></p>
-<div class="highlight"><span class="filename">Program Hello World</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w"></span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span><span class="w"></span>
+<h1 id="komentar">Komentar</h1>
+<p>Komentar Program adalah tulisan-tulisan atau keterangan-keterangan yang dapat memperjelas detail program yang dibuat oleh programmer. Komentar tidak dianggap sebagai bagian tubuh program, sehingga compiler tidak mengikutsertakan komentar dalam proses compile program.</p>
+<p>Ada 2 jenis komentar di dalam <code>Go</code> yaitu: inline &amp;multiline. Pada pembahasan kali ini dijelaskan tentang penerapan dan perbedaan jenis komentar ini.</p>
+<h2 id="komentar-inline">Komentar Inline</h2>
+<p>Aturan untuk menulis komentar ini di awali dengan tanda <code>double slash</code> ( // ) kemudian di ikuti dengan pesan komentarnya. Komentar inline ini hanya bisa dilakukan dengan satu baris saja. Jika kita ingin membuatnya lagi maka harus mengetikkan tanda <code>//</code> lagi.</p>
+<div class="highlight"><span class="filename">Komentar Inline</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="c1">// Ini adalah komentar</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="c1">// Ini juga merupakan komentar</span><span class="w"></span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Hello World&quot;</span><span class="p">)</span><span class="w"></span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Ini akan tampil di terminal&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">// ini merupakan komentar</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Hello World
+<h2 id="komentar-multiline">Komentar Multiline</h2>
+<p>Jika kita ingin menggunakan pesan yang begitu panjang tidak mungkin jika penerapan komentar inline yang akan kita pakai. Maka itu akan susah dan menhabiskan waktu yang lama. Untuk membuat komentar multiline diawali dengan tanda <code>/*</code> dan di akhiri dengan tanda <code>*/</code>.</p>
+<div class="highlight"><span class="filename">Komentar Multiline</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="cm">/*</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cm">        Hello saya merupakan komentar</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="cm">        dan ini juga pesan komentar</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cm">        bisa banyak baris yang digunakan.</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="cm">    */</span><span class="w"></span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 
 
@@ -390,7 +413,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../02go_modules/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Go Modules" rel="prev">
+        <a href="../03helloworld/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Program Hello World" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -399,20 +422,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Go Modules
+              Program Hello World
             </div>
           </div>
         </a>
       
       
         
-        <a href="../04komentar/" class="md-footer__link md-footer__link--next" aria-label="Next: Komentar" rel="next">
+        <a href="../05variabel/" class="md-footer__link md-footer__link--next" aria-label="Next: Variabel" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Komentar
+              Variabel
             </div>
           </div>
           <div class="md-footer__button md-icon">
