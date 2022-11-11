@@ -1,8 +1,18 @@
 site_name: Kelas GoLang(Pertemuan Pertama)
 theme:
   name: material
-  palette:
-    primary: indigo
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -17,4 +27,6 @@ extra:
       link: https://www.facebook.com/fajhrinazgul
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCESphZz-eFN3SSOO3yvcJmA/videos
+    - icon: fontawesome/brands/github
+      link: https://github.com/aZ4ziL
 copyright: Copyright &copy; 2021-2022 Kafekoding
